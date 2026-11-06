@@ -1,0 +1,7 @@
+services:
+  flaskapp:
+    image: ${DOCKERHUB_USERNAME}/flask-app:latest
+    pull_policy: always
+    container_name: flaskapp_cont
+    ports:
+      - "80:80"
